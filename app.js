@@ -28,6 +28,7 @@ const english = {
   skip:'Skip to content',navFaith:'Our faith',navVisit:'Your visit',navPlace:'Our home',contact:'Find us <span>↗</span>',
   heroTitle:'A simple faith.<br>An open door.',heroCopy:'Knowing Jesus. Sharing life.<br>A place to grow in faith, here in Avilés.',heroCta:'Plan your first visit <span>↗</span>',heroIdentity:'AVILÉS CHURCH OF CHRIST',discover:'DISCOVER MORE ↓',
   notice:'We meet on Sundays, 12:00–1:00 p.m., at Centro Empresarial La Curtidora, Camino La Curtidora, 1, Avilés.',noticeLink:'View details <span>→</span>',
+  communityCaption:'Sharing faith and life.',
   welcomeLabel:'WELCOME · BIENVENIDOS',welcomeTitle:'Church is a family.<br>There is a place for you.',welcomeCopy:'Faith begins with an invitation: to draw closer to Jesus and learn to live as He did.',welcomeMore:'We are Christians in Avilés seeking to follow “the Way” of Jesus Christ and the teaching and practice of the first-century church, as recorded in the New Testament. The Bible is our guide and Jesus is at the heart of our faith. Whether you grew up here, recently arrived or are just passing through, you are welcome.',welcomeLink:'Explore our faith <span>↗</span>',
   faithLabel:'WHAT BRINGS US TOGETHER',faithTitle:'Jesus at the center.<br>The Bible as our guide.',faithIntro:'A faith to learn, to share<br>and to live each day.',
   belief1Title:'Returning to Scripture',belief1:'We seek to know God through the Bible, read it in context and follow the teaching of Jesus and His apostles.',belief2Title:'Worshiping simply',belief2:'Our intended practice is to gather for prayer, a cappella singing, teaching from Scripture and sharing the Lord’s Supper every Sunday.',belief3Title:'Living our faith together',belief3:'We believe in responding to the gospel with faith, repentance and baptism by immersion, and in caring for our neighbors with love.',identityNote:'Our identity: Christians seeking to follow the Way of Jesus Christ and the New Testament example of the first-century church.',
@@ -73,8 +74,16 @@ function setLanguage(language){
   document.querySelectorAll('[data-lang]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.lang===language)));
   nav.setAttribute('aria-label',language==='en'?'Main navigation':'Navegación principal');
   updateMenuLabel();
-  const alts=language==='en'?['Arcaded buildings on Calle Galiana in Avilés old town','La Peñona, Salinas beach, Castrillón, near Avilés','San Nicolás de Bari, a historic Roman Catholic church in Avilés']:['Soportales de la calle Galiana en el casco histórico de Avilés','La Peñona, playa de Salinas, Castrillón, cerca de Avilés','San Nicolás de Bari, iglesia católica histórica de Avilés'];
-  document.querySelectorAll('main img').forEach((node,index)=>{node.alt=alts[index];});
+  const imageAlts={
+    'aviles-galiana.jpg':['Soportales de la calle Galiana en el casco histórico de Avilés','Arcaded buildings on Calle Galiana in Avilés old town'],
+    'community-gathering.jpg':['Personas reunidas alrededor de mesas durante una charla','People gathered around tables during a talk'],
+    'salinas-coast.jpg':['La Peñona, playa de Salinas, Castrillón, cerca de Avilés','La Peñona, Salinas beach, Castrillón, near Avilés'],
+    'aviles-san-nicolas-heritage.jpg':['San Nicolás de Bari, iglesia católica histórica de Avilés','San Nicolás de Bari, a historic Roman Catholic church in Avilés']
+  };
+  document.querySelectorAll('main img').forEach(node=>{
+    const alts=imageAlts[node.getAttribute('src').split('/').pop()];
+    if(alts)node.alt=alts[language==='en'?1:0];
+  });
   document.querySelectorAll('a[href="research.html"],a[href="credits.html"]').forEach(node=>{node.href=node.getAttribute('href').split('?')[0]+(language==='en'?'?lang=en':'');});
   try{localStorage.setItem('aviles-language',language);}catch{}
 }
