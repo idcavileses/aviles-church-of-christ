@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x2="1" y2=".35">
+      <stop stop-color="#102f2b"/>
+      <stop offset=".57" stop-color="#173d38"/>
+      <stop offset="1" stop-color="#3a6054"/>
+    </linearGradient>
+    <linearGradient id="mist" x2="0" y2="1">
+      <stop stop-color="#98aa91" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#98aa91" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v900H0z"/>
+  <path fill="url(#mist)" d="M880 900c190-180 270-450 720-560v560z"/>
+  <path fill="#668574" fill-opacity=".10" d="M760 900c310-100 500-340 840-300v300z"/>
+  <path fill="#0d2a26" fill-opacity=".24" d="M0 900c450-85 730 50 1040-15 200-40 350-130 560-110v125z"/>
+</svg>
