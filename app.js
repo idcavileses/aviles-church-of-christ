@@ -25,7 +25,7 @@ const english = {
   worshipJump:"Passages that guide our worship ↗",
   wayScripture:"<blockquote>“I admit that I worship the God of our ancestors as a follower of the Way, which they call a sect.”</blockquote><p><a href=\"https://www.biblegateway.com/passage/?search=Acts+24%3A14&amp;version=NIV\" target=\"_blank\" rel=\"noopener noreferrer\">Acts 24:14 · NIV (excerpt) ↗</a></p><p>Before Governor Felix, Paul connects worshiping God with following the Way. See also <a href=\"https://www.biblegateway.com/passage/?search=Acts+9%3A2&amp;version=KJV\" target=\"_blank\" rel=\"noopener noreferrer\">Acts 9:2 ↗</a>.</p>",
   brandSub:'CHURCH OF CHRIST',brandName:'Avilés Church of Christ',
-  skip:'Skip to content',navFaith:'Our faith',navVisit:'Your visit',navPlace:'Our home',navActivities:'Activities',contact:'Find us <span>↗</span>',contactShort:'Contact',
+  skip:'Skip to content',navFaith:'Our faith',navVisit:'Your visit',navPlace:'Our home',navActivities:'Activities',navPractice:'Practice',contact:'Find us <span>↗</span>',contactShort:'Contact',
   heroTitle:'A simple faith.<br>An open door.',heroCopy:'Knowing Jesus. Sharing life.<br>A place to grow in faith, here in Avilés.',heroCta:'Plan your first visit <span>↗</span>',heroIdentity:'AVILÉS CHURCH OF CHRIST',discover:'DISCOVER MORE ↓',
   notice:'We meet on Sundays, 12:00–1:00 p.m., at Centro Empresarial La Curtidora, Camino La Curtidora, 1, Avilés.',noticeLink:'View details <span>→</span>',
   communityCaption:'Sharing faith and life.',
