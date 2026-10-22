@@ -25,7 +25,7 @@ const english = {
   worshipJump:"Passages that guide our worship ↗",
   wayScripture:"<blockquote>“I admit that I worship the God of our ancestors as a follower of the Way, which they call a sect.”</blockquote><p><a href=\"https://www.biblegateway.com/passage/?search=Acts+24%3A14&amp;version=NIV\" target=\"_blank\" rel=\"noopener noreferrer\">Acts 24:14 · NIV (excerpt) ↗</a></p><p>Before Governor Felix, Paul connects worshiping God with following the Way. See also <a href=\"https://www.biblegateway.com/passage/?search=Acts+9%3A2&amp;version=KJV\" target=\"_blank\" rel=\"noopener noreferrer\">Acts 9:2 ↗</a>.</p>",
   brandSub:'CHURCH OF CHRIST',brandName:'Avilés Church of Christ',
-  skip:'Skip to content',navFaith:'Our faith',navVisit:'Your visit',navPlace:'Our home',contact:'Find us <span>↗</span>',
+  skip:'Skip to content',navFaith:'Our faith',navVisit:'Your visit',navPlace:'Our home',navConference:'Conference',contact:'Find us <span>↗</span>',contactShort:'Contact',
   heroTitle:'A simple faith.<br>An open door.',heroCopy:'Knowing Jesus. Sharing life.<br>A place to grow in faith, here in Avilés.',heroCta:'Plan your first visit <span>↗</span>',heroIdentity:'AVILÉS CHURCH OF CHRIST',discover:'DISCOVER MORE ↓',
   notice:'We meet on Sundays, 12:00–1:00 p.m., at Centro Empresarial La Curtidora, Camino La Curtidora, 1, Avilés.',noticeLink:'View details <span>→</span>',
   communityCaption:'Sharing faith and life.',
@@ -38,7 +38,13 @@ const english = {
   regionLabel:'ROOTED IN ASTURIAS',regionTitle:'A place to call home.',regionIntro:'Between the streets of Avilés and the Cantabrian Sea,<br>an invitation to share life.',coastCaption:'Salinas · Castrillón, near Avilés',heritageCaption:'San Nicolás de Bari · Avilés',heritageNote:'A local Roman Catholic heritage landmark. This is not our meeting place and does not represent our affiliation.',
   faqLabel:'BEFORE YOU VISIT',faqTitle:'You might be wondering…',q1:'Is this a Roman Catholic church?',a1:'We are Christians seeking to follow the Way of Jesus Christ and the New Testament teaching and practice of the first-century church. Each congregation is autonomous. We respect our neighbors of other traditions and seek to follow the New Testament.',q2:'Can I come if I don’t know the Bible?',a2:'Yes. No previous experience or membership is needed. We want to offer a place to listen, learn and ask respectful questions.',q3:'Where and when do you meet?',a3:'We meet on Sundays from 12:00 to 1:00 p.m. (Avilés local time) in the meeting room at Centro Empresarial La Curtidora, Camino La Curtidora, 1, 33402 Avilés, Asturias. Call +34 602 59 45 41 or email idcaviles.es@gmail.com. Photographs of historic churches in the region do not show our meeting place.',q4:'I’m visiting Asturias. Is there information in English?',a4:'Yes. Select EN at the top of this page for English. Meeting languages and any interpretation arrangements have not yet been confirmed; they will be shared with the meeting details.',
   contactLabel:'HERE IN AVILÉS',contactTitle:'Your first step<br>could be a visit.',contactCopy:'Come and meet us at Centro Empresarial La Curtidora.<br>We gather every Sunday from 12:00 to 1:00 p.m.',addressLabel:'Address',address:'Camino La Curtidora, 1<br>33402 Avilés, Asturias, Spain',phoneLabel:'Phone',phone:'+34 602 59 45 41',scheduleLabel:'Gatherings',schedule:'Sundays · 12:00–1:00 p.m.<br>Avilés local time',map:'Get directions to La Curtidora <span>↗</span>',mapNote:'We meet in the meeting room at Centro Empresarial La Curtidora.',
-  footerSub:'Iglesia de Cristo en Avilés · Asturias',researchLink:'Churches of Christ in Spain ↗',creditsLink:'Photography & credits ↗',backTop:'Back to top ↑',footerNote:'Avilés Church of Christ · Sundays, 12:00–1:00 p.m. · Centro Empresarial La Curtidora.'
+  footerSub:'Iglesia de Cristo en Avilés · Asturias',researchLink:'Churches of Christ in Spain ↗',creditsLink:'Photography & credits ↗',backTop:'Back to top ↑',footerNote:'Avilés Church of Christ · Sundays, 12:00–1:00 p.m. · Centro Empresarial La Curtidora.',
+  conferenceBannerLabel:'SEMINAR · OCT 20–22',conferenceBannerTitle:'Science and God: Are they compatible?',conferenceBannerLink:'View details <span aria-hidden="true">↗</span>',conferenceLink:'Conference ↗',
+  conferenceEyebrow:'SEMINAR · AVILÉS',conferenceTitle:'Science and God:<br><em>Are they compatible?</em>',conferenceLead:'An open conversation about science, faith and the questions we share.',conferenceCta:'Seminar details <span>↗</span>',conferenceLive:'OCT 20–22 · OPEN TO ALL',conferenceHost:'AVILÉS CHURCH OF CHRIST',
+  conferenceDetailsLabel:'PRACTICAL INFORMATION',conferenceDetailsTitle:'Come and join us.',conferenceDetailsIntro:'Three evenings to talk about science and faith. Open to all, with no registration needed.',conferenceDateLabel:'Date and time',conferenceDate:'October 20–22, 2026<br>7:00–9:00 p.m. · Asturias local time',conferenceVenueLabel:'Venue',conferenceVenue:'Calle de Llaranes Viejo, 13<br>33460 Avilés, Asturias',conferenceMap:'Get directions ↗',conferenceSpeakerLabel:'Guest speaker',conferenceSpeaker:'<strong>Dr. Mike Houts</strong><br>Former NASA nuclear research manager (retired)',conferenceEntryLabel:'Admission',conferenceEntry:'Open to all<br>No registration needed',conferenceImmediate:'The seminar venue differs from our Sunday meeting place. Questions? Call <a href="tel:+34602594541">+34 602 59 45 41</a>.',conferenceFlyerToggle:'View the original seminar flyer',conferenceFlyerCaption:'Seminar flyer · October 20–22',
+  conferenceTopicLabel:'THE QUESTION',conferenceTopicTitle:'Two ways of looking at the world. One open conversation.',conferenceTopicLead:'How do our discoveries about the universe relate to what we believe about God?',conferenceTopicCopy:'You are welcome to listen, ask questions and talk with respect. You do not need all the answers to take part.',conferenceQuestions:'Have a question? Email us <span>↗</span>',
+  conferenceResourcesLabel:'RELATED MATERIAL',conferenceResourcesTitle:'Keep exploring.',conferenceResourcesIntro:'Two resources in Spanish for exploring the conference questions and the Christian faith more deeply.',conferenceResource1Type:'ARTICLES AND VIDEOS · IN SPANISH',conferenceResource1Copy:'Articles, videos and books about faith, the Bible, and questions about God and creation.',conferenceResource2Type:'BIBLE STUDY · IN SPANISH',conferenceResource2Title:'God’s plan for you',conferenceResource2Copy:'A Spanish-language page from Westbury Church of Christ exploring the Christian message.',conferenceResourceVisit:'Visit resource <span aria-hidden="true">↗</span>',
+  conferenceReturnText:'Get to know our community in Avilés.',conferenceReturn:'Visit our home page <span>↗</span>',homeLink:'Home ↗',contactFooter:'Contact ↗'
 };
 Object.assign(english, {
   "notice": "We meet on Sundays, 12:00–1:00 p.m., at Centro Empresarial La Curtidora, Camino La Curtidora, 1, Avilés.",
@@ -69,7 +75,8 @@ function setLanguage(language){
   const dictionary=language==='en'?english:spanish;
   translatedNodes.forEach(node=>{if(dictionary[node.dataset.i18n])node.innerHTML=dictionary[node.dataset.i18n];});
   document.documentElement.lang=language;
-  document.title=language==='en'?'Avilés Church of Christ · Asturias, Spain':'Iglesia de Cristo en Avilés · Asturias, España';
+  const isConference=document.body.classList.contains('conference-page');
+  document.title=isConference?(language==='en'?'Science and God: Are they compatible? · Avilés Church of Christ':'La ciencia y Dios: ¿son compatibles? · Iglesia de Cristo en Avilés'):(language==='en'?'Avilés Church of Christ · Asturias, Spain':'Iglesia de Cristo en Avilés · Asturias, España');
   document.querySelector('.brand').setAttribute('aria-label',language==='en'?'Avilés Church of Christ':'Iglesia de Cristo en Avilés');
   document.querySelectorAll('[data-lang]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.lang===language)));
   nav.setAttribute('aria-label',language==='en'?'Main navigation':'Navegación principal');
@@ -77,6 +84,7 @@ function setLanguage(language){
   const imageAlts={
     'aviles-galiana.jpg':['Soportales de la calle Galiana en el casco histórico de Avilés','Arcaded buildings on Calle Galiana in Avilés old town'],
     'community-gathering.jpg':['Personas reunidas alrededor de mesas durante una charla','People gathered around tables during a talk'],
+    'science-god-seminar-flyer.jpg':['Cartel del seminario La ciencia y Dios: ¿son compatibles?, con fechas, horario, ponente y dirección','Flyer for the Science and God seminar, showing dates, time, speaker and venue'],
     'salinas-coast.jpg':['La Peñona, playa de Salinas, Castrillón, cerca de Avilés','La Peñona, Salinas beach, Castrillón, near Avilés'],
     'aviles-san-nicolas-heritage.jpg':['San Nicolás de Bari, iglesia católica histórica de Avilés','San Nicolás de Bari, a historic Roman Catholic church in Avilés']
   };
@@ -84,7 +92,7 @@ function setLanguage(language){
     const alts=imageAlts[node.getAttribute('src').split('/').pop()];
     if(alts)node.alt=alts[language==='en'?1:0];
   });
-  document.querySelectorAll('a[href="research.html"],a[href="credits.html"]').forEach(node=>{node.href=node.getAttribute('href').split('?')[0]+(language==='en'?'?lang=en':'');});
+  document.querySelectorAll('a[href^="research.html"],a[href^="credits.html"],a[href^="conference.html"]').forEach(node=>{node.href=node.getAttribute('href').split('?')[0]+(language==='en'?'?lang=en':'');});
   try{localStorage.setItem('aviles-language',language);}catch{}
 }
 function updateMenuLabel(){const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-label',activeLanguage==='en'?(open?'Close menu':'Open menu'):(open?'Cerrar menú':'Abrir menú'));}
@@ -93,4 +101,4 @@ document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener
 menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);updateMenuLabel();});
 nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
 document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu();});
-try{const saved=localStorage.getItem('aviles-language');if(saved)setLanguage(saved);}catch{}
+try{const requested=new URLSearchParams(location.search).get('lang');const saved=localStorage.getItem('aviles-language');if(requested==='en'||requested==='es')setLanguage(requested);else if(saved)setLanguage(saved);}catch{}
