@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <title>Practice page · Avilés Church of Christ</title>
+  <title>Tu espacio para crear · Iglesia de Cristo en Avilés</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <style>
     :root{--ink:#173d38;--paper:#f8f6ef;--accent:#173d38}
@@ -15,6 +15,7 @@
     main{padding:50px 0}.eyebrow{font-size:11px;letter-spacing:.16em;color:#855329;font-weight:bold;margin:0 0 14px}
     h1,h2{font-family:Georgia,serif;font-weight:normal;line-height:1.12}h1{font-size:clamp(36px,6vw,64px);margin:0 0 18px}h2{font-size:clamp(30px,5vw,54px);margin:0 0 20px;overflow-wrap:anywhere}
     .intro{max-width:650px;color:#535f57;margin-bottom:30px}.workspace{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:start}
+    .ideas{background:#eceee5;border-left:3px solid #bd773c;padding:22px 26px;margin:0 0 32px}.ideas h3{margin:0 0 10px;font-size:20px}.ideas p{margin:8px 0}.ideas ul{margin:12px 0;padding-left:22px}.ideas li{margin:6px 0}.ideas .reassurance{font-size:14px;color:#535f57}
     .controls{background:white;padding:24px;border:1px solid #dcded3;border-radius:12px}.controls h3{font-size:17px;margin:0 0 20px}
     label{display:block;font-size:13px;font-weight:bold;margin-bottom:18px}input,textarea,select{display:block;width:100%;font:inherit;color:var(--ink);border:1px solid #bac3ba;border-radius:6px;background:white;margin-top:6px;padding:10px}textarea{resize:vertical;min-height:130px}
     button{font:inherit;cursor:pointer;padding:11px 16px;border-radius:6px;border:1px solid var(--ink);background:var(--ink);color:white;width:100%}
@@ -28,43 +29,53 @@
   </style>
 </head>
 <body>
-  <header><a class="brand" href="index.html?lang=en">AVILÉS CHURCH OF CHRIST</a><span>PRACTICE SPACE</span></header>
+  <header><a class="brand" href="index.html?lang=es">IGLESIA DE CRISTO EN AVILÉS</a><span>ESPACIO DE PRÁCTICA</span></header>
   <main>
-    <p class="eyebrow">TRY, CHANGE AND LEARN</p>
-    <h1>Your space to experiment.</h1>
-    <p class="intro">Ask for changes in this chat, and we will update this page together. You can also try the controls below for an instant preview. Changes made with these controls are saved only in this browser.</p>
+    <p class="eyebrow">TUS IDEAS TIENEN UN LUGAR AQUÍ</p>
+    <h1>Atrévete a probar.<br>Vamos paso a paso.</h1>
+    <p class="intro">No necesitas saber programar para empezar. Tú conoces a tu comunidad: piensa en cómo te gustaría darle la bienvenida y cuéntamelo en el chat de Codex. Haremos los cambios juntos y los verás en esta página.</p>
+    <section class="ideas" aria-labelledby="ideas-title">
+      <h3 id="ideas-title">¿Qué te gustaría cambiar hoy?</h3>
+      <p>Empieza con una petición sencilla. Puedes escribir en el chat:</p>
+      <ul>
+        <li>«Cambia el título por “Bienvenidos a nuestra familia”».</li>
+        <li>«Haz la foto de la cruz más pequeña y ponla junto al mensaje».</li>
+        <li>«Prueba un fondo azul y añade una invitación a conocernos».</li>
+      </ul>
+      <p class="reassurance">No hace falta acertar a la primera. Si algo no te convence, lo ajustamos o volvemos atrás. Las peticiones de esta práctica se aplican solo a esta página experimental.</p>
+    </section>
     <div class="workspace">
       <section class="controls" aria-labelledby="controls-title">
-        <h3 id="controls-title">Make your first change</h3>
-        <label for="title">Title<input id="title" maxlength="160" value="A place to share."></label>
-        <label for="message">Message<textarea id="message" maxlength="2000">This is our practice page. Change this text and try out your own ideas.</textarea></label>
-        <label for="colour">Background colour<select id="colour"><option value="#173d38">Avilés green</option><option value="#254b70">Cantabrian blue</option><option value="#743f2b">Terracotta</option></select></label>
-        <label for="alignment">Alignment<select id="alignment"><option value="left">Left</option><option value="center">Centre</option></select></label>
-        <button id="reset" type="button">Reset to the original example</button>
+        <h3 id="controls-title">También puedes probar aquí</h3>
+        <label for="title">Título<input id="title" maxlength="160" value="Una puerta abierta. Un lugar para ti."></label>
+        <label for="message">Mensaje<textarea id="message" maxlength="2000">Conocer a Jesús. Compartir la vida. Dar la bienvenida a quienes llegan. ¿Cómo lo expresarías tú? Prueba tus palabras y hagamos crecer esta idea juntos.</textarea></label>
+        <label for="colour">Color de fondo<select id="colour"><option value="#173d38">Verde Avilés</option><option value="#254b70">Azul Cantábrico</option><option value="#743f2b">Terracota</option></select></label>
+        <label for="alignment">Alineación<select id="alignment"><option value="left">A la izquierda</option><option value="center">Centrada</option></select></label>
+        <button id="reset" type="button">Volver al ejemplo inicial</button>
       </section>
       <section class="preview" aria-labelledby="preview-label">
-        <p id="preview-label" class="preview-label">PREVIEW YOUR CHANGES</p>
+        <p id="preview-label" class="preview-label">ASÍ VA TOMANDO FORMA TU IDEA</p>
         <div id="sample" class="sample">
-          <h2 id="sample-title">A place to share.</h2>
-          <p id="sample-message">This is our practice page. Change this text and try out your own ideas.</p>
-          <a href="index.html?lang=en">Visit the main website ↗</a>
+          <h2 id="sample-title">Una puerta abierta. Un lugar para ti.</h2>
+          <p id="sample-message">Conocer a Jesús. Compartir la vida. Dar la bienvenida a quienes llegan. ¿Cómo lo expresarías tú? Prueba tus palabras y hagamos crecer esta idea juntos.</p>
+          <a href="index.html?lang=es">Visitar la página principal ↗</a>
           <figure class="cross-photo">
-            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Wooden_cross_at_Lyse_Church_1.jpg/960px-Wooden_cross_at_Lyse_Church_1.jpg" alt="A simple wooden cross standing among trees at Lyse Church in Sweden" width="960" height="1342" referrerpolicy="no-referrer">
-            <figcaption>Photo: <a href="https://commons.wikimedia.org/wiki/File:Wooden_cross_at_Lyse_Church_1.jpg" target="_blank" rel="noopener noreferrer">W.carter / Wikimedia Commons</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a></figcaption>
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Wooden_cross_at_Lyse_Church_1.jpg/960px-Wooden_cross_at_Lyse_Church_1.jpg" alt="Una sencilla cruz de madera entre los árboles de la iglesia de Lyse, en Suecia" width="960" height="1342" referrerpolicy="no-referrer">
+            <figcaption>Fotografía: <a href="https://commons.wikimedia.org/wiki/File:Wooden_cross_at_Lyse_Church_1.jpg" target="_blank" rel="noopener noreferrer">W.carter / Wikimedia Commons</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0</a></figcaption>
           </figure>
         </div>
       </section>
     </div>
-    <p id="status" role="status" aria-live="polite">Ready to begin. Change any field.</p>
-    <noscript><p>Enable JavaScript in your browser to try out changes.</p></noscript>
+    <p id="status" role="status" aria-live="polite">Los controles guardan tus pruebas solo en este navegador. Para cambiar la página publicada, pídemelo en el chat.</p>
+    <noscript><p>Activa JavaScript en tu navegador para probar los controles. También puedes pedir tus cambios en el chat de Codex.</p></noscript>
   </main>
-  <footer>Practice page · <a href="index.html?lang=en">Back to the church website</a></footer>
+  <footer>Página de práctica · <a href="index.html?lang=es">Volver al sitio de la iglesia</a></footer>
   <script>
     'use strict';
     const fields=['title','message','colour','alignment'];
     const inputs=Object.fromEntries(fields.map(name=>[name,document.getElementById(name)]));
     const defaults=Object.fromEntries(fields.map(name=>[name,inputs[name].value]));
-    const storageKey='aviles-practice-v2';
+    const storageKey='aviles-practica-es-v3';
     const status=document.getElementById('status');
     function render(){
       document.getElementById('sample-title').textContent=inputs.title.value;
@@ -80,15 +91,15 @@
           if(inputs[name].tagName==='SELECT'&&![...inputs[name].options].some(option=>option.value===saved[name]))continue;
           inputs[name].value=saved[name].slice(0,inputs[name].maxLength>0?inputs[name].maxLength:100);
         }
-        status.textContent='Your saved experiments have been restored in this browser.';
+        status.textContent='Hemos recuperado tus pruebas de este navegador. Para cambiar la página publicada, pídemelo en el chat.';
       }
     }catch{}
     let saveTimer;
     function update(){
       render();clearTimeout(saveTimer);
       saveTimer=setTimeout(()=>{
-        try{localStorage.setItem(storageKey,JSON.stringify(Object.fromEntries(fields.map(name=>[name,inputs[name].value]))));status.textContent='Experiment saved only in this browser.';}
-        catch{status.textContent='Preview updated. This browser does not allow experiments to be saved.';}
+        try{localStorage.setItem(storageKey,JSON.stringify(Object.fromEntries(fields.map(name=>[name,inputs[name].value]))));status.textContent='Prueba guardada solo en este navegador. También puedes pedirme cambios en el chat.';}
+        catch{status.textContent='Vista previa actualizada. Este navegador no permite guardar las pruebas.';}
       },400);
     }
     for(const input of Object.values(inputs))input.addEventListener('input',update);
@@ -96,7 +107,7 @@
       clearTimeout(saveTimer);
       for(const name of fields)inputs[name].value=defaults[name];
       try{localStorage.removeItem(storageKey);}catch{}
-      render();status.textContent='Original example restored. Try another idea.';
+      render();status.textContent='Ejemplo inicial restaurado. ¿Probamos otra idea?';
     });
     render();
   </script>
