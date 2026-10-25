@@ -65,6 +65,7 @@ Object.assign(english, {
   "a4": "Yes. Select EN at the top of this page for English. Please contact us to ask about meeting languages and interpretation arrangements.",
   "worshipIntro": "Jesus teaches us to worship the Father in spirit and truth. His teaching and the example of the first-century church guide our worship together in Avilés."
 });
+Object.assign(english,{welcomeCopy:english.welcomeCopy+" We are Avil\u00e9s Church of Christ in Asturias, Spain. Join us for worship and Bible study."});
 const translatedNodes=[...document.querySelectorAll('[data-i18n]')];
 const spanish=Object.fromEntries(translatedNodes.map(node=>[node.dataset.i18n,node.innerHTML]));
 const menu=document.querySelector('.menu');
@@ -76,10 +77,7 @@ function setLanguage(language){
   const dictionary=language==='en'?english:spanish;
   translatedNodes.forEach(node=>{if(dictionary[node.dataset.i18n])node.innerHTML=dictionary[node.dataset.i18n];});
   document.documentElement.lang=language;
-  const isConference=document.body.classList.contains('conference-page');
-  document.title=isConference?(language==='en'?'Activities · Avilés Church of Christ':'Actividades · Iglesia de Cristo en Avilés'):(language==='en'?'Avilés Church of Christ · Asturias, Spain':'Iglesia de Cristo en Avilés · Asturias, España');
   document.querySelector('.brand').setAttribute('aria-label',language==='en'?'Avilés Church of Christ':'Iglesia de Cristo en Avilés');
-  document.querySelectorAll('[data-lang]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.lang===language)));
   nav.setAttribute('aria-label',language==='en'?'Main navigation':'Navegación principal');
   updateMenuLabel();
   const imageAlts={
@@ -93,13 +91,18 @@ function setLanguage(language){
     const alts=imageAlts[node.getAttribute('src').split('/').pop()];
     if(alts)node.alt=alts[language==='en'?1:0];
   });
-  document.querySelectorAll('a[href^="research.html"],a[href^="credits.html"],a[href^="activities.html"]').forEach(node=>{node.href=node.getAttribute('href').split('?')[0]+(language==='en'?'?lang=en':'');});
   try{localStorage.setItem('aviles-language',language);}catch{}
 }
 function updateMenuLabel(){const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-label',activeLanguage==='en'?(open?'Close menu':'Open menu'):(open?'Cerrar menú':'Abrir menú'));}
 function closeMenu(){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');updateMenuLabel();}
-document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.lang)));
 menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);updateMenuLabel();});
 nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
 document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu();});
-try{const requested=new URLSearchParams(location.search).get('lang');const saved=localStorage.getItem('aviles-language');if(requested==='en'||requested==='es')setLanguage(requested);else if(saved)setLanguage(saved);}catch{}
+// Explicit, crawlable language URLs take precedence over browser storage.
+const pageLanguage=document.documentElement.lang;
+const requested=new URLSearchParams(location.search).get('lang');
+if((requested==='es'||requested==='en')&&requested!==pageLanguage){
+  const target=new URL(document.querySelector('link[hreflang="'+requested+'"]').href);
+  target.hash=location.hash;
+  location.replace(target.href);
+}else setLanguage(pageLanguage);

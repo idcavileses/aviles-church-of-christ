@@ -1,0 +1,37 @@
+{
+  "englishName": "Avilés Church of Christ",
+  "pages": {
+    "index.html": {
+      "es": {
+        "title": "Iglesia de Cristo en Avilés, Asturias | Domingos 12:00–13:00",
+        "description": "Iglesia de Cristo en Avilés, Asturias. Culto los domingos de 12:00 a 13:00 en Centro Empresarial La Curtidora, Camino La Curtidora, 1. Ven a conocernos.",
+        "url": "https://idc-aviles-asturias.org/"
+      },
+      "en": {
+        "title": "Avilés Church of Christ, Asturias | Sunday Worship 12–1 p.m.",
+        "description": "Visit Avilés Church of Christ in Asturias, Spain. Sunday worship, 12–1 p.m., at Centro Empresarial La Curtidora, Camino La Curtidora, 1. Everyone is welcome.",
+        "url": "https://idc-aviles-asturias.org/en/"
+      }
+    },
+    "activities.html": {
+      "es": {
+        "title": "Actividades y seminarios | Iglesia de Cristo en Avilés",
+        "description": "Actividades de la Iglesia de Cristo en Avilés: cartel, información y recursos del seminario La ciencia y Dios: ¿son compatibles? Entrada gratuita.",
+        "url": "https://idc-aviles-asturias.org/activities.html"
+      },
+      "en": {
+        "title": "Activities and Seminars | Avilés Church of Christ",
+        "description": "Explore Avilés Church of Christ activities, the Science and God seminar flyer, and related articles and videos. Free admission; no registration.",
+        "url": "https://idc-aviles-asturias.org/en/activities.html"
+      }
+    }
+  },
+  "imageAlts": {
+    "aviles-galiana.jpg": "Arcaded buildings on Calle Galiana in Avilés old town",
+    "community-gathering.jpg": "People gathered around tables during a talk",
+    "salinas-coast.jpg": "La Peñona and Salinas beach, near Avilés in Asturias",
+    "aviles-san-nicolas-heritage.jpg": "San Nicolás de Bari, a historic Roman Catholic church in Avilés, not our meeting place",
+    "science-god-seminar-flyer.jpg": "Science and God seminar flyer with dates, time, speaker and venue",
+    "madrid-gran-via.jpg": "Gran Vía in Madrid at sunset"
+  }
+}

@@ -19,3 +19,8 @@ The congregation identifies with the Way of Jesus Christ and the first-century c
 Photo authors and licenses are listed in credits.html. The regional heritage church photo is not the congregation's meeting place.
 
 Domain registration, DNS and GitHub Pages settings are managed separately. Uploading these files does not confirm a domain purchase or activate a custom domain.
+
+## Search and language pages
+
+Canonical production: https://idc-aviles-asturias.org/
+Spanish HTML is at the root; `/en/` serves pre-rendered English. After editing root HTML or translation strings in `app.js`, run `python build_locales.py` (Python 3 + beautifulsoup4 and Node.js), then commit generated `en/` files. No build is required on GitHub Pages. Keep canonical, hreflang and sitemap URLs on the production origin. No passwords belong in this public repository.
